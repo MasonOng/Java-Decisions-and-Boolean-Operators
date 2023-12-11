@@ -1,0 +1,81 @@
+// Java Boolean Operators
+
+// && and - returns true if both statements are true
+// || or -  returns true if one of the statements is true
+// ! not -  returns true if none of the statements are true
+
+// Java If Statements
+
+/*
+if (condition) {
+  // If the condition is true, the code here will be executed.
+}
+
+if (condition) {
+  // If the condition is true, the code here will be executed.
+} else {
+  // If the condition is false, the code here will be executed.
+}
+
+if (condition1) {
+  // If the condition is true, the code here will be executed.
+} else if (condition2) {
+  // If the first condition is false and the second is true, the code here will be executed.
+} else {
+  // If both conditions are false, the code here will be executed.
+}
+*/
+
+// Example:
+
+public class Main {
+    public static void main(String[] args) {
+      int a = 100;
+      int b = 2;
+      
+      if (a>b) {
+        System.out.println("a is greater than b.");
+      } else if (b>a) {
+        System.out.println("b is greater than a.");
+      } else {
+        System.out.println("a and b are equal.");
+      }
+  }
+}
+
+// The code above declares and initializes a and b and checks which is bigger using an if statement.
+
+// Java Switch Statements
+// Switch statements can be used instead of if statements.
+
+/*
+switch(expression) {
+  case x:
+    // The code here will be executed if the case matches the expression.
+    break;
+  case y:
+    // The code here will be executed if the case matches the expression.
+    break;
+  default:
+    // The code here will be executed if none of the cases match the expression.
+    // default does not need a break when it is the last statement in the switch block.
+    // break stops the execution of more code and case testing inside the block.
+}
+*/
+
+// Example:
+
+public class Main {
+  public static void main(String[] args) {
+    int work = 0;
+    switch (work) {
+      case 0:
+        System.out.println("No work to do!");
+        break;
+      default:
+        System.out.println("There is work to do.");
+    }
+  }
+}
+
+// The code above outputs "No work to do!"
