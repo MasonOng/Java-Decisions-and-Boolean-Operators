@@ -1,0 +1,73 @@
+// Question 1:
+// Declare and initialize variables called a and b.
+// If a is divisible by b, print "a is divisible by b."
+// If b is divisible by a, print "b is divisible by a."
+// If neither is divisible by the other, print "Neither is divisible by the other."
+
+// Question 2:
+// Generate three random numbers between 0 and 100 using the math.random() method.
+// If all the numbers are even, print "All the numbers are even."
+// If not, print "Not all the numbers are even."
+
+// Question 3:
+// Ask the user for two integers.
+// If the values are equal, print "The two values are equal."
+// If the values are unequal, print "The two values are unequal."
+
+// Solution 1:
+public class Main {
+    public static void main(String[] args) {
+      int a = 7;
+      int b = 5;
+      
+      if (a%b == 0){
+        System.out.println(a + " is divisible by " + b + ".");
+        System.out.println(a + "/" + b + " = " + a/b);
+      } else if (b%a == 0) {
+        System.out.println(b + " is divisible by " + a + ".");
+        System.out.println(b + "/" + a + " = " + b/a);
+      } else {
+        System.out.println("Neither is divisible by the other.");
+      }
+    }
+}
+
+// Solution 2:
+public class Main {
+    public static void main(String[] args) {
+        int num1 = (int) (Math.random() * 101);
+        int num2 = (int) (Math.random() * 101);
+        int num3 = (int) (Math.random() * 101);
+
+        System.out.println("The random numbers are " + num1 + ", " + num2 + ", and " + num3 + ".");
+
+        if (num1 % 2 == 0 && num2 % 2 == 0 && num3 % 2 == 0) {
+            System.out.println("All the numbers are even.");
+        } else {
+            System.out.println("Not all the numbers are even.");
+        }
+    }
+}
+
+// Solution 3:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first value: ");
+        int value1 = scanner.nextInt();
+
+        System.out.print("Enter the second value: ");
+        int value2 = scanner.nextInt();
+
+        if (value1 == value2) {
+            System.out.println("The two values are equal.");
+        } else {
+            System.out.println("The two values are unequal.");
+        }
+
+        scanner.close();
+    }
+}
